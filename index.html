@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>balanCé — Healthy Bar</title>
+    <meta name="description" content="Cafetería healthy en Plaza la Montaña. Jugos frescos, comida saludable y un gran ambiente. Gran Apertura 24 de mayo 2026." />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+
+  <body class="bg-(--color-background) text-(--color-text)">
+
+    <!-- NAVBAR -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+      <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+
+        <!-- Logo -->
+        <a href="#inicio" class="flex items-center gap-2">
+          <img src="/logo.png" alt="balanCé logo" class="h-10 w-10 object-contain" />
+          <span class="text-xl font-bold tracking-tight text-(--color-primary)">balanCé</span>
+        </a>
+
+        <!-- Nav links (desktop) -->
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="#quienes-somos" class="hover:text-(--color-primary) transition-colors">Quiénes somos</a>
+          <a href="#menu" class="hover:text-(--color-primary) transition-colors">Menú</a>
+          <a href="#ubicacion" class="hover:text-(--color-primary) transition-colors">Ubicación</a>
+        </div>
+
+        <!-- CTA apertura -->
+        <a href="#ubicacion"
+           class="hidden md:inline-flex items-center gap-2 bg-(--color-primary) text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-(--color-accent) transition-colors">
+          Gran Apertura
+        </a>
+
+        <!-- Mobile menu button -->
+        <button id="menu-btn" class="md:hidden p-2 rounded-lg hover:bg-(--color-primary)/10 transition-colors" aria-label="Abrir menú">
+          <svg id="icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </nav>
+
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-(--color-secondary) border-t border-(--color-primary)/20 px-6 py-4 flex flex-col gap-4 text-sm font-medium">
+        <a href="#quienes-somos" class="hover:text-(--color-primary) transition-colors">Quiénes somos</a>
+        <a href="#menu" class="hover:text-(--color-primary) transition-colors">Menú</a>
+        <a href="#ubicacion" class="hover:text-(--color-primary) transition-colors">Ubicación</a>
+        <a href="#ubicacion" class="inline-flex items-center gap-2 bg-(--color-primary) text-white px-5 py-2 rounded-full font-semibold hover:bg-(--color-accent) transition-colors w-fit">
+          Gran Apertura
+        </a>
+      </div>
+    </header>
+
+
+    <!-- HERO -->
+    <section id="inicio" class="min-h-screen flex flex-col items-center justify-center text-center px-6 pt-24 pb-16">
+
+      <!-- Badge apertura -->
+      <div class="inline-flex items-center gap-2 bg-(--color-primary)/15 text-(--color-primary) text-xs font-semibold px-4 py-2 rounded-full mb-8 animate-pulse">
+        <span class="w-2 h-2 rounded-full bg-(--color-primary) inline-block"></span>
+        Gran Apertura — 24 de mayo 2026
+      </div>
+
+      <!-- Logo grande -->
+      <img src="/logo.png" alt="balanCé" class="w-28 h-28 object-contain mb-6" />
+
+      <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-4 text-(--color-text)">
+        balan<span class="text-(--color-primary)">Cé</span>
+      </h1>
+      <p class="text-lg md:text-xl text-(--color-primary) font-medium tracking-widest uppercase mb-8">
+        Healthy Bar
+      </p>
+
+      <p class="text-base md:text-lg text-(--color-text)/70 max-w-xl mb-10 leading-relaxed">
+        Creemos que cuidarse no tiene por qué ser aburrido. Un concepto único de
+        cafetería bar diseñado para quienes buscan el equilibrio perfecto entre
+        sabor, salud y un gran ambiente.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="#menu"
+           class="bg-(--color-primary) text-white px-8 py-3 rounded-full font-semibold hover:bg-(--color-accent) transition-colors text-sm">
+          Ver el menú
+        </a>
+        <a href="#ubicacion"
+           class="border-2 border-(--color-primary) text-(--color-primary) px-8 py-3 rounded-full font-semibold hover:bg-(--color-primary) hover:text-white transition-colors text-sm">
+          Cómo llegar
+        </a>
+      </div>
+
+      <!-- Scroll hint -->
+      <div class="mt-16 animate-bounce">
+        <svg class="w-6 h-6 text-(--color-primary)/50 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </div>
+    </section>
+
+
+    <!-- QUIÉNES SOMOS -->
+    <section id="quienes-somos" class="py-24 px-6 bg-white">
+      <div class="max-w-6xl mx-auto">
+
+        <div class="text-center mb-16">
+          <span class="text-xs font-bold tracking-widest text-(--color-primary) uppercase">Nuestra historia</span>
+          <h2 class="text-4xl md:text-5xl font-extrabold mt-3 text-(--color-text)">Quiénes somos</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <p class="text-lg text-(--color-text)/80 leading-relaxed">
+              Somos un concepto único de <strong class="text-(--color-primary)">cafetería bar</strong> diseñado para
+              quienes buscan el equilibrio perfecto entre sabor, salud y un gran ambiente.
+            </p>
+            <p class="text-base text-(--color-text)/70 leading-relaxed">
+              Nuestra misión es transformar tu rutina. Desde jugos frescos que revitalizan tus mañanas,
+              hasta deliciosa comida saludable ideal para compartir — cada ingrediente es seleccionado
+              para nutrir tu cuerpo y alegrar tu día.
+            </p>
+
+            <!-- Valores -->
+            <div class="grid grid-cols-2 gap-4 pt-4">
+              <div class="bg-(--color-secondary) rounded-2xl p-4">
+                <div class="text-2xl mb-2">🌿</div>
+                <h3 class="font-bold text-sm text-(--color-text)">Natural</h3>
+                <p class="text-xs text-(--color-text)/60 mt-1">Ingredientes frescos y de calidad</p>
+              </div>
+              <div class="bg-(--color-secondary) rounded-2xl p-4">
+                <div class="text-2xl mb-2">⚖️</div>
+                <h3 class="font-bold text-sm text-(--color-text)">Equilibrio</h3>
+                <p class="text-xs text-(--color-text)/60 mt-1">Sabor y salud en cada plato</p>
+              </div>
+              <div class="bg-(--color-secondary) rounded-2xl p-4">
+                <div class="text-2xl mb-2">☀️</div>
+                <h3 class="font-bold text-sm text-(--color-text)">Energía</h3>
+                <p class="text-xs text-(--color-text)/60 mt-1">Para empezar el día con todo</p>
+              </div>
+              <div class="bg-(--color-secondary) rounded-2xl p-4">
+                <div class="text-2xl mb-2">🤝</div>
+                <h3 class="font-bold text-sm text-(--color-text)">Comunidad</h3>
+                <p class="text-xs text-(--color-text)/60 mt-1">Un lugar para reunirse</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Foto destacada -->
+          <div class="relative">
+            <div class="rounded-3xl overflow-hidden shadow-2xl aspect-[3/4]">
+              <img src="/product-1.jpg" alt="Plato saludable balanCé"
+                   class="w-full h-full object-cover" />
+            </div>
+            <div class="absolute -bottom-4 -left-4 bg-(--color-primary) text-white rounded-2xl px-5 py-3 shadow-lg">
+              <p class="text-xs font-medium opacity-80">Abrimos</p>
+              <p class="text-sm font-bold">24 May 2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- MENÚ / GALERÍA -->
+    <section id="menu" class="py-24 px-6 bg-(--color-background)">
+      <div class="max-w-6xl mx-auto">
+
+        <div class="text-center mb-16">
+          <span class="text-xs font-bold tracking-widest text-(--color-primary) uppercase">Lo que hacemos</span>
+          <h2 class="text-4xl md:text-5xl font-extrabold mt-3 text-(--color-text)">Nuestro menú</h2>
+          <p class="text-base text-(--color-text)/60 max-w-md mx-auto mt-4">
+            Jugos frescos, bowls nutritivos y snacks saludables. Todo preparado con ingredientes seleccionados.
+          </p>
+        </div>
+
+        <!-- Grid de productos -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <div class="group rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-white">
+            <div class="overflow-hidden aspect-[3/4]">
+              <img src="/product-1.jpg" alt="Plato saludable"
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div class="p-6">
+              <span class="text-xs font-semibold text-(--color-primary) uppercase tracking-wider">Bowls</span>
+              <h3 class="text-xl font-bold mt-1 text-(--color-text)">Bowls nutritivos</h3>
+              <p class="text-sm text-(--color-text)/60 mt-2 leading-relaxed">
+                Llenos de color, textura y todo lo que tu cuerpo necesita para el día.
+              </p>
+            </div>
+          </div>
+
+          <div class="group rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-white md:mt-8">
+            <div class="overflow-hidden aspect-[3/4]">
+              <img src="/product-2.jpg" alt="Jugos frescos"
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div class="p-6">
+              <span class="text-xs font-semibold text-(--color-primary) uppercase tracking-wider">Jugos</span>
+              <h3 class="text-xl font-bold mt-1 text-(--color-text)">Jugos frescos</h3>
+              <p class="text-sm text-(--color-text)/60 mt-2 leading-relaxed">
+                Prensados en frío o licuados al momento. La mejor forma de comenzar tu mañana.
+              </p>
+            </div>
+          </div>
+
+          <div class="group rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-white">
+            <div class="overflow-hidden aspect-[3/4]">
+              <img src="/product-3.jpg" alt="Snacks saludables"
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div class="p-6">
+              <span class="text-xs font-semibold text-(--color-primary) uppercase tracking-wider">Snacks</span>
+              <h3 class="text-xl font-bold mt-1 text-(--color-text)">Snacks & más</h3>
+              <p class="text-sm text-(--color-text)/60 mt-2 leading-relaxed">
+                Opciones para compartir, picar o llevar. Siempre deliciosas, siempre saludables.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- APERTURA BANNER -->
+    <section class="py-20 px-6 bg-(--color-primary)">
+      <div class="max-w-4xl mx-auto text-center text-white">
+        <p class="text-sm font-semibold tracking-widest uppercase opacity-80 mb-4">Ya está aquí</p>
+        <h2 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+          balanCé está listo para llenar tus días de energía natural
+        </h2>
+        <p class="text-lg opacity-80 mb-10">
+          Jugos, bowls y mucho más. Todo lo que necesitás para sentirte bien.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#ubicacion"
+             class="bg-white text-(--color-primary) px-8 py-3 rounded-full font-bold hover:bg-(--color-secondary) transition-colors text-sm">
+            Ver ubicación
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- UBICACIÓN -->
+    <section id="ubicacion" class="py-24 px-6 bg-white">
+      <div class="max-w-6xl mx-auto">
+
+        <div class="text-center mb-16">
+          <span class="text-xs font-bold tracking-widest text-(--color-primary) uppercase">Encontranos</span>
+          <h2 class="text-4xl md:text-5xl font-extrabold mt-3 text-(--color-text)">Dónde estamos</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+
+          <!-- Info -->
+          <div class="space-y-8">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-(--color-primary)/15 rounded-2xl flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5 text-(--color-primary)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-(--color-text)">Dirección</h3>
+                <p class="text-(--color-text)/70 text-sm mt-1">Plaza la Montaña, Segundo Piso<br>Zona Cumbres</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-(--color-primary)/15 rounded-2xl flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5 text-(--color-primary)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-(--color-text)">Gran Apertura</h3>
+                <p class="text-(--color-text)/70 text-sm mt-1">24 de mayo de 2026</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-(--color-primary)/15 rounded-2xl flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5 text-(--color-primary)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-(--color-text)">Próximamente</h3>
+                <p class="text-(--color-text)/70 text-sm mt-1">Seguinos en Instagram para conocer los horarios de apertura</p>
+              </div>
+            </div>
+
+            <!-- Redes -->
+            <div class="pt-4">
+              <p class="text-xs font-semibold text-(--color-text)/50 uppercase tracking-widest mb-3">Redes sociales</p>
+              <a href="https://www.instagram.com/balancehealthybar"
+                 target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center gap-2 bg-(--color-secondary) hover:bg-(--color-primary)/15 transition-colors px-5 py-2 rounded-full text-sm font-medium text-(--color-text)">
+                <svg class="w-4 h-4 text-(--color-primary)" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+                @balancehealthybar
+              </a>
+            </div>
+          </div>
+
+          <!-- Mapa placeholder -->
+          <div class="rounded-3xl overflow-hidden shadow-xl aspect-square bg-(--color-secondary) flex flex-col items-center justify-center gap-4 p-8 text-center">
+            <div class="w-16 h-16 bg-(--color-primary)/20 rounded-full flex items-center justify-center">
+              <svg class="w-8 h-8 text-(--color-primary)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-(--color-text)">Plaza la Montaña</h3>
+              <p class="text-sm text-(--color-text)/60 mt-1">Segundo Piso — Zona Cumbres</p>
+            </div>
+            <a href="https://maps.google.com/?q=Plaza+la+Montana+Cumbres"
+               target="_blank" rel="noopener noreferrer"
+               class="bg-(--color-primary) text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-(--color-accent) transition-colors">
+              Abrir en Google Maps
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-(--color-text) text-(--color-secondary) py-12 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+
+          <div class="flex items-center gap-3">
+            <img src="/logo.png" alt="balanCé" class="h-8 w-8 object-contain brightness-200" />
+            <div>
+              <p class="font-bold text-lg">balanCé</p>
+              <p class="text-xs opacity-50 uppercase tracking-wider">Healthy Bar</p>
+            </div>
+          </div>
+
+          <div class="flex gap-8 text-sm opacity-70">
+            <a href="#inicio" class="hover:opacity-100 transition-opacity">Inicio</a>
+            <a href="#quienes-somos" class="hover:opacity-100 transition-opacity">Quiénes somos</a>
+            <a href="#menu" class="hover:opacity-100 transition-opacity">Menú</a>
+            <a href="#ubicacion" class="hover:opacity-100 transition-opacity">Ubicación</a>
+          </div>
+
+          <p class="text-xs opacity-40">© 2026 balanCé. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
