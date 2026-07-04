@@ -282,7 +282,7 @@ healthy bar
 balancehealthybar
 
 Creemos que cuidarse no tiene por qué ser aburrido. Somos un concepto
-único de cafetería bar diseñado para quienes buscan el equilibrio
+único de healthy cafetería bar diseñado para quienes buscan el equilibrio
 perfecto entre sabor, salud y un gran ambiente.
 
 

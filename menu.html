@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú — balanCé Healthy Bar</title>
+    <meta name="description" content="Menú completo de balanCé: jugos, licuados, smoothies, sándwiches y postres. Healthy Bar en Plaza la Montaña." />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+
+  <body class="bg-(--color-background) text-(--color-text)">
+
+    <!-- NAVBAR -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+      <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+
+        <a href="/index.html" class="flex items-center gap-2">
+          <img src="/logo.png" alt="balanCé logo" class="h-10 w-10 object-contain" />
+          <span class="text-xl font-bold tracking-tight text-(--color-primary)">balanCé</span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="/index.html#quienes-somos" class="hover:text-(--color-primary) transition-colors">Quiénes somos</a>
+          <a href="/menu.html" class="text-(--color-primary) font-semibold">Menú</a>
+          <a href="/index.html#ubicacion" class="hover:text-(--color-primary) transition-colors">Ubicación</a>
+        </div>
+
+        <a href="/index.html#ubicacion"
+           class="hidden md:inline-flex items-center gap-2 bg-(--color-primary) text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-(--color-accent) transition-colors">
+          Visitanos
+        </a>
+
+        <button id="menu-btn" class="md:hidden p-2 rounded-lg hover:bg-(--color-primary)/10 transition-colors" aria-label="Abrir menú">
+          <svg id="icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </nav>
+
+      <div id="mobile-menu" class="hidden md:hidden bg-(--color-secondary) border-t border-(--color-primary)/20 px-6 py-4 flex flex-col gap-4 text-sm font-medium">
+        <a href="/index.html#quienes-somos" class="hover:text-(--color-primary) transition-colors">Quiénes somos</a>
+        <a href="/menu.html" class="text-(--color-primary) font-semibold">Menú</a>
+        <a href="/index.html#ubicacion" class="hover:text-(--color-primary) transition-colors">Ubicación</a>
+        <a href="/index.html#ubicacion" class="inline-flex items-center gap-2 bg-(--color-primary) text-white px-5 py-2 rounded-full font-semibold hover:bg-(--color-accent) transition-colors w-fit">
+          Visitanos
+        </a>
+      </div>
+    </header>
+
+
+    <!-- HERO MENÚ -->
+    <section class="pt-36 pb-16 px-6 text-center">
+      <img src="/logo.png" alt="balanCé" class="w-14 h-14 object-contain mx-auto mb-4" />
+      <span class="text-xs font-bold tracking-widest text-(--color-primary) uppercase">Lo que hacemos</span>
+      <h1 class="text-5xl md:text-6xl font-extrabold mt-3 mb-4 text-(--color-text)">Nuestro Menú</h1>
+      <p class="text-base text-(--color-text)/60 max-w-md mx-auto">
+        Todo preparado con ingredientes seleccionados. Sin azúcar añadida, sin culpa.
+      </p>
+    </section>
+
+
+    <!-- NOTA -->
+    <div class="max-w-4xl mx-auto px-6 mb-12">
+      <div class="bg-(--color-primary)/10 border border-(--color-primary)/20 rounded-2xl px-6 py-4 text-sm text-(--color-primary) font-medium text-center">
+        Leches, yogurt y cremas — <strong>sin azúcar</strong>.
+      </div>
+    </div>
+
+
+    <!-- CONTENIDO DEL MENÚ -->
+    <main class="max-w-5xl mx-auto px-6 pb-24 space-y-20">
+
+
+      <!-- JUGOS -->
+      <section>
+        <div class="flex items-center gap-4 mb-8">
+          <div class="h-px flex-1 bg-(--color-primary)/20"></div>
+          <h2 class="text-2xl font-extrabold text-(--color-primary) uppercase tracking-widest">Jugos</h2>
+          <div class="h-px flex-1 bg-(--color-primary)/20"></div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+
+          <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-bold text-lg text-(--color-text)">Betjuice</h3>
+              <span class="text-(--color-primary) font-bold text-lg">$80</span>
+            </div>
+            <p class="text-sm text-(--color-text)/60 leading-relaxed">Betabel, jengibre, zanahoria, naranja.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-bold text-lg text-(--color-text)">Tropical Detox</h3>
+              <span class="text-(--color-primary) font-bold text-lg">$85</span>
+            </div>
+            <p class="text-sm text-(--color-text)/60 leading-relaxed">Piña, pepino, apio, espinaca, limón, jengibre.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-bold text-lg text-(--color-text)">Verde Vida</h3>
+              <span class="text-(--color-primary) font-bold text-lg">$85</span>
+            </div>
+            <p class="text-sm text-(--color-text)/60 leading-relaxed">Pepino, apio, espinaca, perejil, jengibre, manzana verde, limón amarillo.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-bold text-lg text-(--color-text)">Classic Orange</h3>
+              <span class="text-(--color-primary) font-bold text-lg">$85</span>
+            </div>
+            <p class="text-sm text-(--color-text)/60 leading-relaxed">Jugo de naranja, zanahoria, limón verde.</p>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- LICUADOS -->
+      <section>
+        <div class="flex items-center gap-4 mb-8">
+          <div class="h-px flex-1 bg-(--color-primary)/20"></div>
+          <h2 class="text-2xl font-extrabold text-(--color-primary) uppercase tracking-widest">Licuados</h2>
+          <div class="h-px flex-1 bg-(--color-primary)/20"></div>
+        </div>
+
+        <!-- Cocoa Pump -->
+        <div class="bg-white rounded-3xl p-8 shadow-sm mb-6">
+          <div class="flex justify-between items-start mb-1">
+            <h3 class="font-bold text-xl text-(--color-text)">Cocoa Pump</h3>
+          </div>
+          <p class="text-xs font-semibold text-(--color-primary) uppercase tracking-wider mb-6">Personalizable</p>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+            <div>
+              <p class="font-semibold text-(--color-text) mb-2">Paso 1 — Proteína</p>
+              <ul class="space-y-1 text-(--color-text)/60">
+                <li class="flex justify-between"><span>Whey Gold Standard</span><span class="font-semibold text-(--color-text)">$159</span></li>
+                <li class="flex justify-between"><span>Birdman</span><span class="font-semibold text-(--color-text)">$149</span></li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold text-(--color-text) mb-2">Paso 2 — Base de leche</p>
+              <ul class="space-y-1 text-(--color-text)/60">
+                <li class="flex justify-between"><span>Leche de almendra</span><span class="font-semibold text-(--color-text)">$69</span></li>
+                <li class="flex justify-between"><span>Leche de avena</span><span class="font-semibold text-(--color-text)">$65</span></li>
+                <li class="flex justify-between"><span>Leche deslactosada</span><span class="font-semibold text-(--color-text)">$70</span></li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold text-(--color-text) mb-2">Extras opcionales</p>
+              <ul class="space-y-1 text-(--color-text)/60">
+                <li class="flex justify-between"><span>Creatina GAT (1 scoop)</span><span class="font-semibold text-(--color-text)">$25</span></li>
+                <li class="flex justify-between"><span>Nuez</span><span class="font-semibold text-(--color-text)">$15</span></li>
+                <li class="flex justify-between"><span>Almendra</span><span class="font-semibold text-(--color-text)">$15</span></li>
+                <li class="flex justify-between"><span>Crema maní sin azúcar</span><span class="font-semibold text-(--color-text)">$15</span></li>
+                <li class="flex justify-between"><span>Crema almendra sin azúcar</span><span class="font-semibold text-(--color-text)">$15</span></li>
+                <li class="flex justify-between"><span>Crema nuez sin azúcar</span><span class="font-semibold text-(--color-text)">$15</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vainilla Pump -->
+        <div class="bg-white rounded-3xl p-8 shadow-sm">
+          <div class="flex justify-between items-start mb-1">
+            <h3 class="font-bold text-xl text-(--color-text)">Vainilla Pump</h3>
+          </div>
+          <p class="text-xs font-semibold text-(--color-primary) uppercase tracking-wider mb-6">Personalizable</p>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+            <div>
+              <p class="font-semibold text-(--color-text) mb-2">Paso 1 — Proteína</p>
+              <ul class="space-y-1 text-(--color-text)/60">
+                <li class="flex justify-between"><span>Whey Gold Standard</span><span class="font-semibold text-(--color-text)">$159</span></li>
+                <li class="flex justify-between"><span>Birdman</span><span class="font-semibold text-(--color-text)">$149</span></li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold text-(--color-text) mb-2">Paso 2 — Base de leche</p>
+              <ul class="space-y-1 text-(--color-text)/60">
+                <li class="flex justify-between"><span>Leche de almendra</span><span class="font-semibold text-(--color-text)">$69</span></li>
+                <li class="flex justify-between"><span>Leche de avena</span><span class="font-semibold text-(--color-text)">$65</span></li>
+                <li class="flex justify-between"><span>Leche deslactosada</span><span class="font-semibold text-(--color-text)">$70</span></li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold text-(--color-text) mb-2">Extras opcionales</p>
+              <ul class="space-y-1 text-(--color-text)/60">
+                <li class="flex justify-between"><span>Creatina GAT (1 scoop)</span><span class="font-semibold text-(--color-text)">$15</span></li>
+                <li class="flex justify-between"><span>Nuez</span><span class="font-semibold text-(--color-text)">$5</span></li>
+                <li class="flex justify-between"><span>Almendra</span><span class="font-semibold text-(--color-text)">$5</span></li>
+                <li class="flex justify-between"><span>Crema maní sin azúcar</span><span class="font-semibold text-(--color-text)">$10</span></li>
+                <li class="flex justify-between"><span>Crema almendra sin azúcar</span><span class="font-semibold text-(--color-text)">$10</span></li>
+                <li class="flex justify-between"><span>Porción fruta</span><span class="font-semibold text-(--color-text)">$5</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- SMOOTHIES -->
+      <section>
+        <div class="flex items-center gap-4 mb-8">
+          <div class="h-px flex-1 bg-(--color-primary)/20"></div>
+          <h2 class="text-2xl font-extrabold text-(--color-primary) uppercase tracking-widest">Smoothies</h2>
+          <div class="h-px flex-1 bg-(--color-primary)/20"></div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+          <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-bold text-lg text-(--color-text)">Reese's</h3>
+              <span class="text-(--color-primary) font-bold text-lg">$159</span>
+            </div>
+            <p class="text-sm text-(--color-text)/60 leading-relaxed">Leche de avena, plátano, yogurt griego, crema de maní, cacao, proteína vegana chocolate.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-bold text-lg text-(--color-text)">Pink</h3>
+              <span class="text-(--color-primary) font-bold text-lg">$159</span>
+            </div>
+            <p class="text-sm text-(--color-text)/60 leading-relaxed">Leche de almendra, fresas, plátano, yogurt griego, crema de almendra, proteína vegana de vainilla.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-bold text-lg text-(--color-text)">Cora Mora</h3>
+              <span class="text-(--color-primary) font-bold text-lg">$159</span>
+            </div>
+            <p class="text-sm text-(--color-text)/60 leading-relaxed">Leche de almendra, plátano, mix de frutos rojos, yogurt griego, crema de almendra, proteína vegana de chocolate.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-bold text-lg text-(--color-text)">Berry</h3>
+              <span class="text-(--color-primary) font-bold text-lg">$159</span>
+            </div>
+            <p class="text-sm text-(--color-text)/60 leading-relaxed">Leche de almendra, berries, plátano, yogurt griego, crema de almendra, proteína vegana de vainilla.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-bold text-lg text-(--color-text)">Coco Cloud</h3>
+              <span class="text-(--color-primary) font-bold text-lg">$169</span>
+            </div>
+            <p class="text-sm text-(--color-text)/60 leading-relaxed">Leche de coco, yogurt griego de coco, plátano, piña, mango, crema de almendra, espirulina azul, proteína vegana de vainilla.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-bold text-lg text-(--color-text)">Malibú</h3>
+              <span class="text-(--color-primary) font-bold text-lg">$149</span>
+            </div>
+            <p class="text-sm text-(--color-text)/60 leading-relaxed">Leche de almendra, mango, piña, berries, yogurt griego, proteína vegana de vainilla.</p>
+          </div>
+
+        </div>
+
+        <!-- Personaliza tu smoothie -->
+        <div class="mt-6 bg-(--color-primary)/5 border border-(--color-primary)/15 rounded-3xl p-8">
+          <h3 class="font-bold text-lg text-(--color-text) mb-6">Personaliza tu smoothie</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-sm">
+            <div>
+              <p class="font-semibold text-(--color-text) mb-2">Base de leche</p>
+              <ul class="space-y-1 text-(--color-text)/60">
+                <li>Agua</li>
+                <li>Leche de almendra</li>
+                <li>Leche de avena</li>
+                <li>Leche deslactosada</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold text-(--color-text) mb-2">Frutas (1 o 2)</p>
+              <ul class="space-y-1 text-(--color-text)/60">
+                <li>Plátano</li>
+                <li>Fresa</li>
+                <li>Mango</li>
+                <li>Berries</li>
+                <li>Frutos rojos</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold text-(--color-text) mb-2">Extras opcionales</p>
+              <ul class="space-y-1 text-(--color-text)/60">
+                <li class="flex justify-between"><span>Porción fruta</span><span class="font-semibold text-(--color-text)">$5</span></li>
+                <li class="flex justify-between"><span>Creatina GAT (1 scoop)</span><span class="font-semibold text-(--color-text)">$15</span></li>
+                <li class="flex justify-between"><span>Nuez</span><span class="font-semibold text-(--color-text)">$5</span></li>
+                <li class="flex justify-between"><span>Almendra</span><span class="font-semibold text-(--color-text)">$5</span></li>
+                <li class="flex justify-between"><span>Crema maní sin azúcar</span><span class="font-semibold text-(--color-text)">$10</span></li>
+                <li class="flex justify-between"><span>Crema almendra sin azúcar</span><span class="font-semibold text-(--color-text)">$10</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- SÁNDWICHES -->
+      <section>
+        <div class="flex items-center gap-4 mb-8">
+          <div class="h-px flex-1 bg-(--color-primary)/20"></div>
+          <h2 class="text-2xl font-extrabold text-(--color-primary) uppercase tracking-widest">Sándwiches</h2>
+          <div class="h-px flex-1 bg-(--color-primary)/20"></div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+          <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-bold text-lg text-(--color-text)">El Clásico</h3>
+              <span class="text-(--color-primary) font-bold text-lg">$135</span>
+            </div>
+            <p class="text-sm text-(--color-text)/60 leading-relaxed">Pan de masa madre, queso panela, jamón de pavo, espinaca fresca, acompañado de aguacate y aderezo de tu elección.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-bold text-lg text-(--color-text)">Chipotle</h3>
+              <span class="text-(--color-primary) font-bold text-lg">$150</span>
+            </div>
+            <p class="text-sm text-(--color-text)/60 leading-relaxed">Pan de masa madre con pollo deshebrado bañado en chipotle, queso gratinado, aguacate, tomate cherry y espinaca fresca.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-bold text-lg text-(--color-text)">Bufalo</h3>
+              <span class="text-(--color-primary) font-bold text-lg">$160</span>
+            </div>
+            <p class="text-sm text-(--color-text)/60 leading-relaxed">Pan de masa madre, pollo deshebrado bañado en salsa buffalo, queso gratinado, tomate cherry y aguacate.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-bold text-lg text-(--color-text)">Queso Panela Asado</h3>
+              <span class="text-(--color-primary) font-bold text-lg">$160</span>
+            </div>
+            <p class="text-sm text-(--color-text)/60 leading-relaxed">Pan de masa madre, queso panela asado con jamón de pavo, guacamole con pico de gallo y espinaca fresca.</p>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- BEBIDAS FRÍAS -->
+      <section>
+        <div class="flex items-center gap-4 mb-8">
+          <div class="h-px flex-1 bg-(--color-primary)/20"></div>
+          <h2 class="text-2xl font-extrabold text-(--color-primary) uppercase tracking-widest">Bebidas Frías</h2>
+          <div class="h-px flex-1 bg-(--color-primary)/20"></div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+
+          <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-bold text-lg text-(--color-text)">Jamaica</h3>
+              <span class="text-(--color-primary) font-bold text-lg">$70</span>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-bold text-lg text-(--color-text)">Limonada</h3>
+              <span class="text-(--color-primary) font-bold text-lg">$30</span>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-bold text-lg text-(--color-text)">Limonada con Chía</h3>
+              <span class="text-(--color-primary) font-bold text-lg">$32</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- POSTRES -->
+      <section>
+        <div class="flex items-center gap-4 mb-8">
+          <div class="h-px flex-1 bg-(--color-primary)/20"></div>
+          <h2 class="text-2xl font-extrabold text-(--color-primary) uppercase tracking-widest">Postres</h2>
+          <div class="h-px flex-1 bg-(--color-primary)/20"></div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl">
+
+          <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-bold text-lg text-(--color-text)">Parfait</h3>
+              <span class="text-(--color-primary) font-bold text-lg">$30</span>
+            </div>
+            <p class="text-sm text-(--color-text)/60 leading-relaxed">Yogurt griego sin azúcar, fruta de temporada, miel de abeja, granola artesanal.</p>
+          </div>
+
+        </div>
+      </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-(--color-text) text-(--color-secondary) py-12 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+
+          <div class="flex items-center gap-3">
+            <img src="/logo.png" alt="balanCé" class="h-8 w-8 object-contain brightness-200" />
+            <div>
+              <p class="font-bold text-lg">balanCé</p>
+              <p class="text-xs opacity-50 uppercase tracking-wider">Healthy Bar</p>
+            </div>
+          </div>
+
+          <div class="flex gap-8 text-sm opacity-70">
+            <a href="/index.html" class="hover:opacity-100 transition-opacity">Inicio</a>
+            <a href="/index.html#quienes-somos" class="hover:opacity-100 transition-opacity">Quiénes somos</a>
+            <a href="/menu.html" class="opacity-100 font-semibold">Menú</a>
+            <a href="/index.html#ubicacion" class="hover:opacity-100 transition-opacity">Ubicación</a>
+          </div>
+
+          <p class="text-xs opacity-40">© 2026 balanCé. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/menu.js"></script>
+  </body>
+</html>
